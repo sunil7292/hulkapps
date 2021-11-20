@@ -1,0 +1,82 @@
+.nav-sidebar .menu-open > .nav-link i.right {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.nav-sidebar > .nav-item {
+    margin-bottom:0px;
+}
+
+.error {
+    color: red;
+}
+
+.de-light-bg{	
+	background:#e9edf4;
+}
+
+.quota-details th{	
+	text-align:center;
+}
+
+.quota-details .odd{
+	background:#f4f6f9;
+	color:#000;
+	text-align:center;
+}
+
+.quota-details .even{
+	color:#717171;
+	text-align:center;
+}
+
+.card-footer-l-bg{
+	background:#fff;
+}
+
+.proposal-details h3{	
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.proposal-details .co-number{
+	margin:10px 0 0 0;
+}
+
+.proposal-details h1{	
+	font-weight:bold;
+}
+
+.proposal-details h4{
+	border-bottom:1px solid #848484;	
+	padding-bottom:20px;
+	display: inline-block;
+}
+
+.buil-details-form{
+	border-bottom:1px solid #848484;
+	padding:0 0 10px 0;
+	margin:0px 0 0px 0;	
+}
+
+.buil-size-name span{
+	font-weight:bold;
+	padding-left:20px;
+}
+.buil-size-price span{
+	font-weight:bold;
+	padding-left:20px;
+}
+.read-more-show{
+    cursor:pointer;
+    color: #007bff;
+}
+
+.read-more-hide{
+    cursor:pointer;
+    color: #007bff;
+}
+
+.hide_content{
+    display: none;
+}
