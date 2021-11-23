@@ -30,7 +30,7 @@ class AppointmentController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index(Request $request)
-    { echo phpinfo(); exit;
+    {
         $allAppointments = Appointment::select(DB::raw('appointments.*, udr.name AS doctor, upt.name AS patient, apst.status'))
                 ->leftJoin('users AS udr', 'udr.id', '=', 'appointments.doctor_id')
                 ->leftJoin('users AS upt', 'upt.id', '=', 'appointments.patient_id')
