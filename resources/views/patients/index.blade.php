@@ -97,7 +97,7 @@
                                             <i class="fas fa-trash">
                                             </i>
                                             Delete
-                                            <form action="{{ route('patients.destroy',$patients->id) }}" id='deletePatients' method="POST">
+                                            <form action="{{ route('patients.destroy',$patients->id) }}" id='deletePatient' method="POST">
 
                                                 @csrf
                                                 @method('DELETE')
