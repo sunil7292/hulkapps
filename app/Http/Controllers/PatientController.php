@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Requests\CreatePatient;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use App\Models\Appointment;
 
 class PatientController extends Controller
 {
@@ -104,9 +105,15 @@ class PatientController extends Controller
      */
     public function destroy(User $patient)
     {
-        $patient->delete();
+        $appointment = Appointment::where('patient_id', $patient->id)->first();
+        if (isset($appointment->id) && $appointment->id > 0) {
+            return redirect()->route('patients.index')
+                ->with('error','Appointment assign to patient, you can not delete.');
+        } else {
+            $patient->delete();
 
-        return redirect()->route('patients.index')
-            ->with('success','patient deleted successfully');
+            return redirect()->route('patients.index')
+                ->with('success','patient deleted successfully');
+        }
     }
 }
