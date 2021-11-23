@@ -28,9 +28,3 @@ This whole task complete in 7-9 approax hours
 
 And guest user book appointment by email also available with login with google but not specify in the task so i complete with simple guest registration form.
 
-ranpurasunil7292@gmail.com
-$uns@123
-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
-
-https://github.com/sunil7292/hulkapps.git
-
